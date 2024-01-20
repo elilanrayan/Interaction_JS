@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62,5%;
+}
+
+h1{
+    font-size: 2.6rem;
+    font-family: 'Source Serif 4', serif;
+}
+
+h2{
+    font-size: 4.6rem;
+    font-family: 'Source Serif 4', serif;
+    font-size: 100px;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4,h5{
+    font-size: 2rem;
+}
+
+li{
+    font-size: 2rem;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.main-head{
+    background-color: rgb(165, 42, 42);
+    color: whitesmoke;
+}
+
+nav{
+    min-height: 1Ovh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin:auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#logo{
+    flex: 2 1 40rem;
+}
+
+/* Main*/
+
+.main{
+    min-height: 90vh;
+    background: linear-gradient(rgb(0,0,0,0.6),transparent),url("img/epices.jpg");
+    background-size: cover;
+    background-position: bottom;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main h3{
+    padding:4rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+button{
+    padding:1rem 4rem;
+    background-color: brown;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 30px;
+    border-style: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bolder;
+    box-shadow: 5px 2px 2px rgb(55, 55, 55);
+}
+
+p{
+    font-size: 30px;
+}
+
+/* Footer*/
+
+footer{
+    background-color:  rgb(165, 42, 42);
+    padding: 50px 0;
+}
+
+footer h3{
+    color:bisque;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+@media screen and (max-width: 885px) {
+    html{
+        font-size: 45%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+    
+    .footer{
+        width: 50%;
+    }
+
+}
+
+@media (max-width:390px) {
+    html{
+        font-size: 35%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+    
+    .footer{
+        width: 390px;
+        text-align: center;
+        display: flex;
+    }
+
+
+   
+}
+
+
+
+
+
+.swiper-slide{
+    height: 100vh;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding-left: 100px;
+}
+
+.a{
+    background-image:url("img/safran.jpg") ;
+    background-size: cover;
+}
+
+
+.c{
+    background-image: url("img/CurryA.jpg");
+    background-size: cover;
+}
+.titre{
+    font-weight: bold;
+    font-size: 72px;
+    color: black;
+    text-transform: lowercase;
+}
+
+
+.texte{
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    font-size: bold;
+}
+.b{
+    background-image: url("img/curcumaA.jpg");
+    background-size: cover;
+}
+
+body .swiper-pagination-active{
+    background: rgba(255, 68, 0, 0.154);
+}
+
+body .swiper-button-next,.swiper-button-prev{
+    background: rgba(255, 68, 0, 0.173);
+}
+
+body .swiper-pagination-bullet{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+
+.swiper{
+    height: 100vh;
+}
+
+.dark{
+    background-color: rgb(57, 57, 57);
+}
+
+.modesombre,.inscrire{
+    cursor: pointer;
+    font-size: bold;
+}
+
+.js a{
+    color:black;
+}
+
+
+.tab-active{
+    color:red;
+}
+.content{
+    display: none;
+    background-color: gray;
+    text-align: center;
+}
+.active{
+    display: block;
+}
